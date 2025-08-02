@@ -8,7 +8,7 @@ export const InitialStateAnimation = () => {
         <Github className="h-24 w-24 text-primary animate-float" />
       </div>
       <p className="text-lg text-muted-foreground mt-2">
-        Start with username to explore.
+        Start with username to explore
       </p>
     </div>
   );
