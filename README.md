@@ -1,3 +1,5 @@
+<img width="456" height="92" alt="image" src="https://github.com/user-attachments/assets/5cdeb40a-3fb5-4bc3-854e-0a2ce57fa0ad" />
+
 # Github Spotlight
 
 Github Spotlight - Search repositories without headache. Created by Raihan Nismara.
