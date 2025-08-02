@@ -2,6 +2,8 @@
 
 Github Spotlight - Search repositories without headache. Created by Raihan Nismara.
 
+[View Demo](https://github-spotlight-snowy.vercel.app/)
+
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps.
@@ -14,22 +16,22 @@ You need to have Node.js and npm installed on your machine. You can use nvm (Nod
 
 ### Installation
 
-1.  Clone the repo
-    ```sh
-    git clone <YOUR_GIT_URL>
-    ```
-2.  Navigate to the project directory
-    ```sh
-    cd <YOUR_PROJECT_NAME>
-    ```
-3.  Install NPM packages
-    ```sh
-    npm install
-    ```
-4.  Start the development server
-    ```sh
-    npm run dev
-    ```
+1. Clone the repo
+   ```sh
+   git clone <YOUR_GIT_URL>
+   ```
+2. Navigate to the project directory
+   ```sh
+   cd <YOUR_PROJECT_NAME>
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Start the development server
+   ```sh
+   npm run dev
+   ```
 
 ## Architecture
 
@@ -75,14 +77,14 @@ The `GitHubState` includes:
 
 ## Data Flow
 
-1.  The user enters a GitHub username in the **`SearchForm`** and submits the form.
-2.  The `handleSubmit` function in **`SearchForm`** dispatches a `SET_LOADING` action to show a loading indicator.
-3.  It then calls the `getUser` and `getUserRepositories` functions from **`githubApi`** to fetch the user's data.
-4.  If the API call is successful, the fetched data is used to update the global state by dispatching `SET_USER` and `SET_REPOSITORIES` actions.
-5.  If the API call fails, a `SET_ERROR` action is dispatched, and an error message is displayed.
-6.  The **`GitHubExplorer`** page listens for changes in the state and conditionally renders the **`UserProfile`** and **`RepositoryList`** components when the user data is available.
-7.  When a user clicks on a repository in the **`RepositoryList`**, a `SET_SELECTED_REPOSITORY` action is dispatched.
-8.  This triggers the rendering of the **`RepositoryDetail`** component, which then fetches and displays the repository's README.
+1. The user enters a GitHub username in the **`SearchForm`** and submits the form.
+2. The `handleSubmit` function in **`SearchForm`** dispatches a `SET_LOADING` action to show a loading indicator.
+3. It then calls the `getUser` and `getUserRepositories` functions from **`githubApi`** to fetch the user's data.
+4. If the API call is successful, the fetched data is used to update the global state by dispatching `SET_USER` and `SET_REPOSITORIES` actions.
+5. If the API call fails, a `SET_ERROR` action is dispatched, and an error message is displayed.
+6. The **`GitHubExplorer`** page listens for changes in the state and conditionally renders the **`UserProfile`** and **`RepositoryList`** components when the user data is available.
+7. When a user clicks on a repository in the **`RepositoryList`**, a `SET_SELECTED_REPOSITORY` action is dispatched.
+8. This triggers the rendering of the **`RepositoryDetail`** component, which then fetches and displays the repository's README.
 
 ## Built With
 
